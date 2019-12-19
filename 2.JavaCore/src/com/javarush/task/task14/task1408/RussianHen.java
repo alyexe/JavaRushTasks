@@ -1,0 +1,13 @@
+package com.javarush.task.task14.task1408;
+
+class RussianHen extends Solution.Hen {
+    @Override
+    int getCountOfEggsPerMonth() {
+        return 10;
+    }
+
+    @Override
+    String getDescription() {
+        return super.getDescription() + " Моя страна - " + Country.RUSSIA + ". Я несу " + getCountOfEggsPerMonth() + " яиц в месяц.";
+    }
+}
