@@ -14,6 +14,9 @@ public class Solution {
     }
 
     public static class NormalCat extends NakedCat {
+        public NormalCat() {
+        }
+
         public NormalCat(String name) {
             System.out.println("My name is " + name);
         }
