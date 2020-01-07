@@ -5,21 +5,22 @@ package com.javarush.task.task15.task1516;
 */
 
 public class Solution {
-        public static int intVar;
-        public static double doubleVar;
-        public static Double DoubleVar;
-        public static boolean booleanVar;
-        public static Object ObjectVar;
-        public static Exception ExceptionVar;
-        public static String StringVar;
+        public int intVar;
+        public double doubleVar;
+        public Double DoubleVar;
+        public boolean booleanVar;
+        public Object ObjectVar;
+        public Exception ExceptionVar;
+        public String StringVar;
 
     public static void main(String[] args) {
-        System.out.println(intVar);
-        System.out.println(doubleVar);
-        System.out.println(DoubleVar);
-        System.out.println(booleanVar);
-        System.out.println(ObjectVar);
-        System.out.println(ExceptionVar);
-        System.out.println(StringVar);
+        Solution s = new Solution();
+        System.out.println(s.intVar);
+        System.out.println(s.doubleVar);
+        System.out.println(s.DoubleVar);
+        System.out.println(s.booleanVar);
+        System.out.println(s.ObjectVar);
+        System.out.println(s.ExceptionVar);
+        System.out.println(s.StringVar);
     }
 }

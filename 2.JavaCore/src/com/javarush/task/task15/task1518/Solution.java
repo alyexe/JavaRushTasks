@@ -17,6 +17,6 @@ public class Solution {
     }
 
     public static class Cat {
-        public static String name;
+        public String name;
     }
 }
