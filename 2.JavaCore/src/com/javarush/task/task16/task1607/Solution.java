@@ -21,7 +21,10 @@ public class Solution {
         for (Horse h : horses) {
             if (h.isFinished()) {
                 finishedCount++;
-            }
+            } else {
+				System.out.println("Waiting for " + h.getName());
+				h.join();
+			}
         }
         return finishedCount;
     }
