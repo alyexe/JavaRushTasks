@@ -9,9 +9,10 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        String input;
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        while(!(input.isBlank())) {
+        input = scanner.nextLine();
+        while(!input.equals("")) {
             Cat cat = CatFactory.getCatByKey(input);
             System.out.println(cat.toString());
             input = scanner.nextLine();
