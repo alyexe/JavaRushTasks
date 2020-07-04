@@ -19,13 +19,10 @@ public class Solution {
         FileInputStream fis = new FileInputStream(fileName);
         while (fis.available() > 0) {
             int data = fis.read();
+            max = Math.max(max, data);
             bytes[data]++;
         }
         fis.close();
-
-        for (int i : bytes) {
-            max = Math.max(max, i);
-        }
 
         for (int i = 0; i < bytes.length; i++) {
             if (bytes[i] == max) {
